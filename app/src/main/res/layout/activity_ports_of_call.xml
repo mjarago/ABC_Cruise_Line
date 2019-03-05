@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#85ffe2"
+    tools:context="com.example.arago.abccompany.PortsOfCall">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="205dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/pocImage"
+            android:layout_width="wrap_content"
+            android:layout_height="173dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/disney1" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#AA000000"
+            android:fontFamily="serif-monospace"
+            android:text="Northern Europe"
+            android:textAlignment="center"
+            android:textColor="#ffffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/null"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif-monospace"
+        android:text="Ports of Call"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/port3"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="53dp"
+        android:text="port1"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/port2"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="183dp"
+        android:text="port1"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/port1"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="260dp"
+        android:text="port1"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/port1Act2"
+        android:layout_width="147dp"
+        android:layout_height="116dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/port1Act1"
+        android:layout_marginEnd="11dp"
+        android:text="port1Act2" />
+
+    <TextView
+        android:id="@+id/port2Act2"
+        android:layout_width="145dp"
+        android:layout_height="116dp"
+        android:layout_alignStart="@+id/port1Act2"
+        android:layout_alignTop="@+id/port2Act1"
+        android:text="port2Act2" />
+
+    <TextView
+        android:id="@+id/port3Act2"
+        android:layout_width="145dp"
+        android:layout_height="116dp"
+        android:layout_alignStart="@+id/port1Act2"
+        android:layout_alignTop="@+id/port3Act1"
+        android:text="port3Act2" />
+
+    <TextView
+        android:id="@+id/port3Act1"
+        android:layout_width="145dp"
+        android:layout_height="116dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/port1Act1"
+        android:layout_marginBottom="12dp"
+        android:text="port3Act1" />
+
+    <TextView
+        android:id="@+id/port2Act1"
+        android:layout_width="145dp"
+        android:layout_height="116dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/port3Act1"
+        android:layout_marginBottom="142dp"
+        android:text="port2Act1" />
+
+    <TextView
+        android:id="@+id/port1Act1"
+        android:layout_width="145dp"
+        android:layout_height="116dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="219dp"
+        android:text="port1Activity1" />
+
+</RelativeLayout>

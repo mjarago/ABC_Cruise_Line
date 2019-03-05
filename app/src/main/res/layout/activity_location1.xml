@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#85ffe2"
+    tools:context=".location1">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="205dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/bgImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/disney1" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#AA000000"
+            android:fontFamily="serif-monospace"
+            android:text="Northern Europe"
+            android:textAlignment="center"
+            android:textColor="#ffffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnDecks"
+        android:layout_width="161dp"
+        android:layout_height="154dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnOBA"
+        android:layout_marginBottom="24dp"
+        android:background="#ff85a2"
+        android:text="Decks" />
+
+    <Button
+        android:id="@+id/btnItinerary"
+        android:layout_width="161dp"
+        android:layout_height="154dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="200dp"
+        android:layout_marginStart="31dp"
+        android:background="#ff85a2"
+        android:text="Itinerary"
+        tools:text="Itinerary" />
+
+    <Button
+        android:id="@+id/btnOBA"
+        android:layout_width="161dp"
+        android:layout_height="154dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnItinerary"
+        android:layout_marginEnd="31dp"
+        android:background="#ff85a2"
+        android:text="On Board Activities" />
+
+    <Button
+        android:id="@+id/btnPOC"
+        android:layout_width="161dp"
+        android:layout_height="154dp"
+        android:layout_alignStart="@+id/btnItinerary"
+        android:layout_alignTop="@+id/btnDecks"
+        android:background="#ff85a2"
+        android:text="PORTS OF CALL" />
+
+
+</RelativeLayout>

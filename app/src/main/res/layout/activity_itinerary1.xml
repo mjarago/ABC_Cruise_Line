@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#85ffe2"
+    tools:context=".Itinerary1">
+
+    <FrameLayout
+        android:id="@+id/imageTitle"
+        android:layout_width="204dp"
+        android:layout_height="113dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/bgImage"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/disney1" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="161dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:background="#AA000000"
+            android:fontFamily="serif-monospace"
+            android:gravity="center_vertical"
+            android:text="Northern Europe"
+            android:textAlignment="center"
+            android:textColor="#ffffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/cruiseTitle"
+        android:layout_marginTop="123dp"
+        android:backgroundTint="@color/mdtp_button_color"
+        android:checkedButton="@+id/rbFive"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/rbFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_light"
+            android:text="5-Night Cruise" />
+
+        <RadioButton
+            android:id="@+id/rbSeven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_light"
+            android:text="7-Night Cruise" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="44dp"
+        android:text="Search"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="17dp"
+        android:fontFamily="monospace"
+        android:text="Check Available Dates"
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/cruiseTitle"
+        android:layout_width="358dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="123dp"
+        android:background="#39ffd0"
+        android:fontFamily="serif-monospace"
+        android:text="5-Night Northern Europe Cruise from Dover"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cruiseDesc"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cruiseTitle"
+        android:layout_alignStart="@+id/cruiseTitle"
+        android:layout_below="@+id/cruiseTitle"
+        android:layout_marginTop="9dp"
+        android:background="#39ffd0"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/northern_europe_desc"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cruiseDesc"
+        android:layout_below="@+id/cruiseDesc"
+        android:layout_marginTop="18dp"
+        android:text="Date: "
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/shipName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/shipName2"
+        android:layout_marginStart="69dp"
+        android:gravity="center_vertical"
+        android:text="Northern Spirit"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/shipName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/viewPOC"
+        android:layout_alignStart="@+id/tvDate"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:text="Ship: "
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/viewPOC"
+        android:layout_width="84dp"
+        android:layout_height="63dp"
+        android:layout_alignBaseline="@+id/tvDate"
+        android:layout_alignEnd="@+id/btnSearch"
+        android:text="View Ports of Call"
+        android:textSize="10sp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="292dp"
+        android:layout_below="@+id/viewPOC"
+        android:layout_centerHorizontal="true"
+        android:background="#ff85a2">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="181dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif-monospace"
+            android:text="Room Type:"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.215"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.101" />
+
+        <Spinner
+            android:id="@+id/spinRmType"
+            android:layout_width="156dp"
+            android:layout_height="26dp"
+            android:layout_alignBottom="@+id/textView16"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/imageTitle"
+            android:background="#85ffe2"
+            android:dropDownWidth="match_parent"
+            android:entries="@array/roomType"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.864"
+            app:layout_constraintStart_toEndOf="@+id/textView16"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.032" />
+
+        <ImageView
+            android:id="@+id/roomImage"
+            android:layout_width="195dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.105"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16"
+            app:layout_constraintVertical_bias="0.546"
+            app:srcCompat="@drawable/inside" />
+
+        <TextView
+            android:id="@+id/roomTitle"
+            android:layout_width="201dp"
+            android:layout_height="58dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:text="@string/inside_title"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/roomImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.101"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif-monospace"
+            android:text="Price: "
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.774"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinRmType"
+            app:layout_constraintVertical_bias="0.748" />
+
+        <TextView
+            android:id="@+id/roomPrice"
+            android:layout_width="70dp"
+            android:layout_height="21dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif-monospace"
+            android:text="$2,597"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinRmType"
+            app:layout_constraintVertical_bias="0.747" />
+
+        <TextView
+            android:id="@+id/roomDesc"
+            android:layout_width="143dp"
+            android:layout_height="96dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif-monospace"
+            android:text="@string/inside_details"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/roomImage"
+            app:layout_constraintTop_toBottomOf="@+id/spinRmType"
+            app:layout_constraintVertical_bias="0.468" />
+
+        <Button
+            android:id="@+id/btnReserve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Reservation"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roomImage" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

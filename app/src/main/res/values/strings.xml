@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">ABC Company</string>
+
+    <string name="europe_mediterr_price">2000</string>
+    <string name="britIsles_barcelona_price">1500</string>
+
+
+    <string name="northern_europe_title">7-Night Northern Europe Cruise from Copenhagen</string>
+    <string name="northern_europe_desc">Immerse yourself in Scandinavian splendor as you zigzag to 3 breathtaking ports of call.
+        Refresh and recharge during your days at sea with countless onboard amenities</string>
+    <string name="northern_europe_ship">Northern Spirit</string>
+
+
+    <string name="mediterr_cruise_title">7-Night Mediterranean Cruise from Rome</string>
+    <string name="mediterr_cruise_desc">Revel in a diverse getaway that blends first-rate amenities with extraordinary destinations.
+        A day at sea gives you a chance to enjoy the lively entertainment, themed dining and fun recreational activities aboard.</string>
+    <string name="mediterr_cruise_ship">Star Line</string>
+
+    <string name="british_isles_title">5-Night British Isles Cruise from Barcelona</string>
+    <string name="british_isles_desc">Roam the bustling streets of Dover - before or after - your roundtrip escapade to a diverse collection of maritime towns.
+        Fascinating stopovers include Liverpool, Edinburgh and Dublin.</string>
+    <string name="british_isles_ship">Cheerio Cruise</string>
+
+    <string name="barcelona_cruise_title">5-Night British Isles Cruise from Barcelona</string>
+    <string name="barcelona_cruise_desc">
+    Enter jet-set mode on a roundtrip cruise from buzzing Barcelona that takes you to jaw-dropping locales across Italy and France.
+    A day at sea gives you a chance to enjoy the lively entertainment, themed dining and fun recreational activities aboard.</string>
+    <string name="barcelona_cruise_ship">Epic Cabana</string>
+
+
+    <string name="inside_title">Standard Inside Stateroom</string>
+    <string name="oceanview_title">Deluxe Oceanview Stateroom</string>
+    <string name="verandah_title">Deluxe Oceanview Stateroom with Verandah</string>
+    <string name="concierge_title">Concierge 2-Bedroom Suite with Verandah</string>
+
+    <string name="inside_details">Sleeps 3 to 4 \n184 sq ft \nNo Exterior View</string>
+    <string name="oceanview_details">Sleeps 3 to 4 \n214 sq ft \n1 Large Porthole or 2 Small Portholes</string>
+    <string name="verandah_details">Sleeps 5 \n304 sq ft Including Verandah \nPrivate Verandah</string>
+    <string name="concierge_details">Sleeps 7 \n945 sq ft Including Verandah \nPrivate Verandah</string>
+
+    <string-array name="roomType">
+        <item>Inside</item>
+        <item>Oceanview</item>
+        <item>Verandah</item>
+        <item>Concierge</item>
+    </string-array>
+</resources>

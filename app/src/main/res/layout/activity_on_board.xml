@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#85ffe2"
+    tools:context=".OnBoard">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/spa"
+        android:layout_gravity="center"
+        android:layout_marginBottom="106dp"
+        android:background="#AA000000"
+        android:fontFamily="serif-monospace"
+        android:text="PAINTING"
+        android:textAlignment="center"
+        android:textColor="#ffffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView14"
+        android:layout_alignStart="@+id/spa"
+        android:layout_gravity="center"
+        android:background="#AA000000"
+        android:fontFamily="serif-monospace"
+        android:text="IMAX"
+        android:textAlignment="center"
+        android:textColor="#ffffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/spa"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_gravity="center"
+        android:background="#AA000000"
+        android:fontFamily="serif-monospace"
+        android:text="Go Kart"
+        android:textAlignment="center"
+        android:textColor="#ffffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="188dp"
+        android:layout_height="103dp"
+        android:layout_alignBottom="@+id/imageView67"
+        android:layout_alignStart="@+id/spa"
+        android:text="ABC  Department of Theatre AND Film, where the future of canadian theatre and film can be seen today.$50/seat"
+        android:textAlignment="viewStart"
+        android:textColor="@color/mdtp_ampm_text_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="188dp"
+        android:layout_height="75dp"
+        android:layout_alignStart="@+id/spa"
+        android:layout_below="@+id/textView13"
+        android:layout_marginTop="-106dp"
+        android:text="Learn Step-By-Step various brushing techniques AND Colour mixing by our professional onboard artists. $200/seat"
+        android:textAlignment="viewStart"
+        android:textColor="@color/mdtp_ampm_text_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="188dp"
+        android:layout_height="103dp"
+        android:layout_alignStart="@+id/spa"
+        android:layout_below="@+id/textView18"
+        android:text="ABC  SPEEDERS Indoor ProKarts is rated the best race track offering a safe racing experience.Come Experience The Speed and Power. $100/2hours"
+        android:textAlignment="viewStart"
+        android:textColor="@color/mdtp_ampm_text_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/spa"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/imageView6"
+        android:background="#AA000000"
+        android:fontFamily="serif-monospace"
+        android:text="SPA"
+        android:textAlignment="center"
+        android:textColor="#ffffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/spaDetails"
+        android:layout_width="188dp"
+        android:layout_height="103dp"
+        android:layout_alignBottom="@+id/imageView6"
+        android:layout_alignStart="@+id/spa"
+        android:text="The warm lighting and stone accents in the spa are sure to put you in a relaxing frame of mind as you enjoy an individual consultation and treatment with a member of their qualified and friendly staff. $50/session"
+        android:textAlignment="viewStart"
+        android:textColor="@color/mdtp_ampm_text_color"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="188dp"
+        android:layout_height="126dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="23dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/download" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="190dp"
+        android:layout_height="134dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageView6"
+        android:layout_marginTop="173dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/cart" />
+
+    <ImageView
+        android:id="@+id/imageView67"
+        android:layout_width="187dp"
+        android:layout_height="145dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView6"
+        android:layout_marginBottom="142dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/film" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="189dp"
+        android:layout_height="158dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView6"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/paint" />
+
+
+</RelativeLayout>

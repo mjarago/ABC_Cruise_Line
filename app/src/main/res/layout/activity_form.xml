@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#85ffe2"
+    tools:context=".ActivityForm">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="serif-monospace"
+        android:text="@string/northern_europe_title"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/tvRoomType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tvDate"
+        android:layout_marginTop="121dp"
+        android:text="Room Type: " />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="94dp"
+        android:text="Date:" />
+
+    <FrameLayout
+        android:layout_width="370dp"
+        android:layout_height="121dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="148dp"
+        android:background="#ff85a2">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="155dp"
+        android:text="ON BOARD ACTIVITIES" />
+
+    <CheckBox
+        android:id="@+id/cbtnPainting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/cbtnImax"
+        android:layout_marginTop="229dp"
+        android:text="PAINTING ($ 200)" />
+
+    <CheckBox
+        android:id="@+id/cbtnImax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/cbtnSpa"
+        android:layout_marginEnd="80dp"
+        android:text="IMAX ($ 50)" />
+
+    <CheckBox
+        android:id="@+id/cbtnGoKart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvRoomType"
+        android:layout_alignTop="@+id/cbtnPainting"
+        android:text="GO KART ($ 100)" />
+
+    <CheckBox
+        android:id="@+id/cbtnSpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tvRoomType"
+        android:layout_marginTop="190dp"
+        android:text="SPA ($ 50)" />
+
+    <FrameLayout
+        android:layout_width="370dp"
+        android:layout_height="228dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:background="#ff85a2">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tvRoomType"
+        android:layout_marginTop="68dp"
+        android:text="Price: $2,150"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="271dp"
+        android:text="PORTS OF CALL ACTIVITIES" />
+
+    <TextView
+        android:id="@+id/port1Name"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/tvRoomType"
+        android:layout_marginBottom="242dp"
+        android:text="port1" />
+
+    <CheckBox
+        android:id="@+id/ckbActiv1"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvRoomType"
+        android:layout_below="@+id/port1Name"
+        android:layout_marginTop="-242dp"
+        android:text="activity1"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/ckbActiv2"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cbtnPainting"
+        android:layout_alignTop="@+id/ckbActiv1"
+        android:layout_marginEnd="-13dp"
+        android:text="activity2"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/port2Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/tvRoomType"
+        android:layout_marginBottom="183dp"
+        android:text="port2" />
+
+    <CheckBox
+        android:id="@+id/ckbActiv3"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvRoomType"
+        android:layout_below="@+id/port2Name"
+        android:layout_marginTop="-183dp"
+        android:text="activity3"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/ckbActiv4"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ckbActiv2"
+        android:layout_below="@+id/port2Name"
+        android:layout_marginTop="-183dp"
+        android:text="activity4"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/port3Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/tvRoomType"
+        android:layout_marginBottom="124dp"
+        android:text="port3" />
+
+    <CheckBox
+        android:id="@+id/ckbActiv5"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvRoomType"
+        android:layout_below="@+id/port3Name"
+        android:layout_marginTop="-124dp"
+        android:text="activity5"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/ckbActiv6"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ckbActiv2"
+        android:layout_below="@+id/port3Name"
+        android:layout_marginTop="-124dp"
+        android:text="activity6"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="NEXT" />
+
+</RelativeLayout>

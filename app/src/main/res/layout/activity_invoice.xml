@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#85ffe2"
+    tools:context=".Invoice">
+
+    <TextView
+        android:id="@+id/invName"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:fontFamily="serif-monospace"
+        android:text="Invoice for"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/invName"
+        android:layout_marginTop="76dp"
+        android:text="Cruise: "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/invName"
+        android:layout_marginTop="232dp"
+        android:text="Room Type (Number):"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/invName"
+        android:layout_marginTop="158dp"
+        android:text="Ship: "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView23"
+        android:layout_alignStart="@+id/invName"
+        android:layout_marginBottom="-150dp"
+        android:text="Date: "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/invName"
+        android:layout_marginTop="190dp"
+        android:text="Price: $"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/invRoomType"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/invName"
+        android:layout_alignTop="@+id/textView22"
+        android:text="TextView"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/invPrice"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/invName"
+        android:layout_alignTop="@+id/textView25"
+        android:text="TextView"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/invShip"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/invName"
+        android:layout_alignTop="@+id/textView23"
+        android:text="TextView"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/invDate"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView23"
+        android:layout_alignEnd="@+id/invName"
+        android:layout_marginBottom="-150dp"
+        android:text="TextView"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/invCruiseTitle"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/invName"
+        android:layout_alignTop="@+id/textView17"
+        android:text="TextView"
+        android:textSize="18sp" />
+
+    <TableLayout
+        android:id="@+id/onboardTable"
+        android:layout_width="match_parent"
+        android:layout_height="131dp"
+        android:layout_alignBottom="@+id/id"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="113dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="85dp"
+        android:layout_marginStart="116dp"
+        android:text="TextView" />
+
+    <TableLayout
+        android:id="@+id/tb2"
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+</RelativeLayout>
